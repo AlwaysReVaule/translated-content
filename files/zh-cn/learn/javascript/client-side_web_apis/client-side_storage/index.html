@@ -372,7 +372,7 @@ request.onupgradeneeded = function(e) {
 
   <p>然后<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IDBDatabase/createObjectStore" title="此方法接受一个参数作为 store 的名称，也接受一个可选的参数对象让你可以定义重要的可选属性。你可以用这个属性唯一的标识此 store 中的每个对象。因为参数是一个标识符，所以 store 中的每一个对象都应有此属性并保证此属性唯一。"><code>IDBDatabase.createObjectStore()</code></a>，我们使用在打开的数据库中创建一个新的对象库。这相当于传统数据库系统中的单个表。我们给它起了名称注释，并且还指定了一个<code>autoIncrement</code>名为的关键字段<code>id</code>- 在每个新记录中，这将自动赋予增量值 - 开发人员不需要明确地设置它。作为密钥，该<code>id</code>字段将用于唯一标识记录，例如删除或显示记录时。</p>
 
-  <p>我们还使用以下<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IDBObjectStore/createIndex" rel="nofollow" title="此页面仍未被本地化, 期待您的翻译!"><code>IDBObjectStore.createIndex()</code></a>方法创建另外两个索引（字段）:( <code>title</code>每个音符将包含一个标题），以及<code>body</code>（包含音符的正文）。</p>
+  <p>我们还使用以下<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IDBObjectStore/createIndex" rel="nofollow" title="此页面仍未被本地化, 期待您的翻译!"><code>IDBObjectStore.createIndex()</code></a>方法创建另外两个索引（字段）:( <code>title</code>每个笔记将包含一个标题），以及<code>body</code>（包含笔记的正文）。</p>
  </li>
 </ol>
 
